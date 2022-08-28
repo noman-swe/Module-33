@@ -18,10 +18,12 @@ function loadPosts() {
 }
 
 // 
-function displayUsers(data){
-    for(const user of data){
-        console.log(user.name);
+function displayUsers(data) {
+    const ul = document.getElementById('users');
+    for (const user of data) {
+        // console.log(user.name);
+        const li = document.createElement('li');
+        li.innerText = `Name: ${user.name} & Email: ${user.email}`;
+        ul.appendChild(li); 
     }
-    /* const soloData = data.map(user => user.name);//map() creates a new array from calling a function for every array element.
-    console.log(soloData);  */
 }
