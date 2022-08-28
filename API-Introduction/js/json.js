@@ -21,3 +21,6 @@ console.log(shopStringified);
 const converted = JSON.parse(shopStringified);
 console.log(converted);
 console.log(converted.owner);
+
+
+
