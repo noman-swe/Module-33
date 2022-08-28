@@ -19,8 +19,8 @@ function loadPosts() {
 
 // 
 function displayUsers(data){
-    for(const SoloData of data){
-        console.log(SoloData.name);
+    for(const user of data){
+        console.log(user.name);
     }
     /* const soloData = data.map(user => user.name);//map() creates a new array from calling a function for every array element.
     console.log(soloData);  */
